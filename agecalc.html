@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Calculator</title>
+	<script type="text/javascript" src="agecalc.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+	<style type="text/css">
+		body{
+			background-color: lightgrey;
+		}
+
+		.container{
+			margin-left: 400px;
+			margin-top: 100px;
+			background-color: white;
+			padding: 30px;
+			width: 600px;
+		}
+
+		.form-control{
+			width: 45%;
+		}
+
+		.input{
+			width: 30%;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div>
+		Date of Birth:
+		<input class="form-control" type="text" id="bdate" placeholder="Birth Date (DD/MM/YYYY)">
+		Time:
+		<input class="form-control" type="text" id="btime" placeholder="Birth Time (HH:MM)"><br>
+		Current Date:
+		<input class="form-control" type="text" id="cdate" placeholder="Current Date (DD/MM/YYYY)">
+		Time:
+		<input class="form-control" type="text" id="ctime" placeholder="Current Time (HH:MM)">
+	</div><br>
+		<input class="btn btn-success"type="button" value="Calculate" onclick="calculate()"><br><br>
+	
+	<div class="out">
+	<div class="row">
+		<input class="input form-control" type="text" id="age" placeholder="Years">
+		<input class="input form-control" type="text" id="months" placeholder="Months">
+		<input class="input form-control" type="text" id="days" placeholder="Days">
+	</div>
+	<div class="row">
+		<input class="input form-control" type="text" id="hours" placeholder="Hours">
+		<input class="input form-control" type="text" id="minutes" placeholder="Minutes">
+	</div>
+	<p id="error"></p>
+	</div>
+
+</div>
+</body>
+</html>
